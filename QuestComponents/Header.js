@@ -6,7 +6,7 @@ export default function Header() {
             <View style={styles.head}>
                 <Image 
                 style={styles.star}
-                source={require('/home/david/Documentos/Trolling/QuestComponents/Pics/starm.png')} 
+                source={require('./Pics/starm.png')} 
                 />
                 <Text style={styles.headtext}>Main Quests</Text>
             </View>

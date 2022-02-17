@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, FlatList} from 'react-native';
 import Header from './QuestComponents/Header';
 import Data from './QuestComponents/Input';
 import QuestItem from './QuestComponents/QuestItem';
+import Card from './QuestComponents/Card';
 
 export default function App() {
   const [quest, setQuest] = useState([
@@ -35,6 +36,7 @@ export default function App() {
       <View style={styles.marginb}>
         <Data submitQuest={submitQuest} />
         <View style={styles.content}>
+        <Card />
           <FlatList
             style={styles.flat}
             data = {quest}

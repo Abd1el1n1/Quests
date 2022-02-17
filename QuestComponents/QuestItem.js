@@ -9,7 +9,7 @@ export default function QuestItem({item, Click}) {
             style={styles.touch}>
             <Image
                 style={styles.image}
-                source={require('/home/david/Documentos/Trolling/QuestComponents/Pics/bullet.jpeg')} 
+                source={require('./Pics/bullet.jpeg')} 
             />
             <Text style={styles.quest}>{item.name}</Text>
         </TouchableOpacity>
