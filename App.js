@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import { StyleSheet, Text, View, Image, FlatList} from 'react-native';
-import Header from './QuestComponents/Header';
-import Data from './QuestComponents/Input';
-import QuestItem from './QuestComponents/QuestItem';
-import Card from './QuestComponents/Card';
+import Header from './src/components/Header';
+import Data from './src/components/Input';
+import QuestItem from './src/components/QuestItem';
+import Card from './src/components/Card';
 
 export default function App() {
   const [quest, setQuest] = useState([
