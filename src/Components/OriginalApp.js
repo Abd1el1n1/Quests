@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import { StyleSheet, Text, View, Image, FlatList} from 'react-native';
-import Header from './QuestComponents/Header';
-import Data from './QuestComponents/Input';
-import QuestItem from './QuestComponents/QuestItem';
-import Card from './QuestComponents/Card';
+import Header from './Components/Header';
+import Data from './Components/Input';
+import QuestItem from './Components/QuestItem';
+import Card from './Components/Card';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
 
@@ -12,7 +12,7 @@ export default function App() {
   const getFonts = async () => {
     console.log('cheackpoint')
     return await Font.loadAsync({
-    'dancing-bold': require('./QuestComponents/Fonts/DancingScript-Bold.ttf'),
+    'dancing-bold': require('./Components/Fonts/DancingScript-Bold.ttf'),
   });
   }
 
