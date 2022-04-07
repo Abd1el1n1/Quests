@@ -2,9 +2,12 @@ import React from 'react';
 import { View, Text, TouchableOpacity, ImageBackground} from 'react-native';
 import { Card, Icon } from 'react-native-elements'
 import { styles } from './GlobalStyles';
+import { createTable } from '../db/db'
 
 export default function Home({navigation}) {
-
+    useEffect(() => {
+        createTable();
+    });
     return(
         <ImageBackground source={require('./images/sword.jpg')} resizeMode="cover" style={styles.container}>
             <TouchableOpacity onPress={() => navigation.push('Mainq')}>
