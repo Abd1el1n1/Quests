@@ -1,4 +1,5 @@
-package com.quests;
+package abdielini.quests;
+import expo.modules.devlauncher.DevLauncherController;
 
 import android.app.Application;
 import android.content.Context;
@@ -55,6 +56,7 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
 
+    DevLauncherController.initialize(this, getReactNativeHost());
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
     ApplicationLifecycleDispatcher.onApplicationCreate(this);
   }
@@ -80,7 +82,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.quests.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("abdielini.quests.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

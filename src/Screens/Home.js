@@ -1,9 +1,12 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { styles } from './GlobalStyles';
+import { createTable } from '../db/db'
 
 export default function Home({navigation}) {
-
+    useEffect(() => {
+        createTable();
+    });
     return(
         <View style={{
             padding: 24,

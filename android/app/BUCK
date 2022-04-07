@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.quests",
+    package = "abdielini.quests",
 )
 
 android_resource(
     name = "res",
-    package = "com.quests",
+    package = "abdielini.quests",
     res = "src/main/res",
 )
 

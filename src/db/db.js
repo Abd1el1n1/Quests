@@ -3,6 +3,8 @@ import { openDatabase } from "react-native-sqlite-storage";
 const db = openDatabase({name:'Quests'});
 
 export const createTable = () => {
+    //createTablemainQuest
+    //createTablesideQuest
     db.transaction( txn => {
         txn.executeSql('CREATE TABLE IF NOT EXISTS quests (id INTEGER PRIMARY KEY AUTOINCREMENT, titulo VARCHAR(30), descripcion VARCHAR(400))'
         ,[]
